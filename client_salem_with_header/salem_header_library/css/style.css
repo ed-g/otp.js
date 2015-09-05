@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#planner-top-header {
+  width: 100%;
+  background-color: #efefef;
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+#planner-top-header .inner {
+  width: 100%;
+  height: 50px;
+}
+#planner-top-header .inner #left-logo-and-title-holder {
+  display: table;
+  float: left;
+  margin: 13px;
+  color: #646565;
+}
+#planner-top-header .inner #left-logo-and-title-holder #logo-holder,
+#planner-top-header .inner #left-logo-and-title-holder #title-holder {
+  display: table-cell;
+  vertical-align: middle;
+}
+#planner-top-header .inner #left-logo-and-title-holder #logo-holder {
+  padding-right: 15px;
+}
+#planner-top-header .inner #left-logo-and-title-holder #title-holder {
+  font-size: 1.4em;
+  font-weight: 100;
+  position: relative;
+  top: 4px;
+  padding-left: 2px;
+}
+#planner-top-header .inner #back-link-holder {
+  float: right;
+  display: table;
+  margin-top: 26px;
+}
+#planner-top-header .inner #back-link-holder #back-link {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+#planner-top-header .inner #back-link-holder #back-link a:link,
+#planner-top-header .inner #back-link-holder #back-link a:hover {
+  background: #969696;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 0px;
+  padding-bottom: 6px;
+  border-radius: 3px;
+  font-size: .7em;
+  padding-left: 24px;
+  line-height: .8em;
+  padding-right: 3px;
+  font-weight: 100;
+}
+#planner-top-header .inner #back-link-holder #back-link a:link object,
+#planner-top-header .inner #back-link-holder #back-link a:hover object {
+  position: relative;
+  top: 3px;
+}
+#planner-top-header .inner #back-link-holder #back-link a:hover {
+  background: #a8a8a8;
+}
+#planner-top-header-bottom-border {
+  width: 100%;
+  height: 3px;
+  background: #646565;
+  clear: both;
+}
