@@ -20,3 +20,5 @@ To get started with otp.js and the sample web client:
 4. Update the default configuration in `client/config.js` to point to your OTP backend.
 
 5. Deploy the client to the web by copying the `client` directory to your web server.
+
+6. Note the build process makes some absolute symlinks, in the images directory. Delete these and replace them with copies of the images instead. Otherwise when you copy to server, the image links will be broken.
