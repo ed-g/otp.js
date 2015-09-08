@@ -10,41 +10,42 @@ body {
   -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  font-family: 'Open Sans', sans-serif;
 }
 #planner-top-header .inner {
   width: 100%;
-  height: 50px;
 }
 #planner-top-header .inner #left-logo-and-title-holder {
-  display: table;
-  float: left;
-  margin: 13px;
   color: #646565;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 #planner-top-header .inner #left-logo-and-title-holder #logo-holder,
 #planner-top-header .inner #left-logo-and-title-holder #title-holder {
-  display: table-cell;
   vertical-align: middle;
 }
 #planner-top-header .inner #left-logo-and-title-holder #logo-holder {
-  padding-right: 15px;
+  margin-right: 15px;
+  width: 140px;
+  display: inline-block;
 }
 #planner-top-header .inner #left-logo-and-title-holder #title-holder {
+  display: inline-block;
   font-size: 1.4em;
-  font-weight: 100;
   position: relative;
   top: 4px;
   padding-left: 2px;
-}
-#planner-top-header .inner #back-link-holder {
-  float: right;
-  display: table;
-  margin-top: 26px;
+  font-weight: 100;
+  margin-left: 4px;
+  letter-spacing: 1px;
 }
 #planner-top-header .inner #back-link-holder #back-link {
+  margin-top: 11px;
   display: table-cell;
   vertical-align: middle;
+  letter-spacing: 1px;
   padding-right: 10px;
+  float: right;
 }
 #planner-top-header .inner #back-link-holder #back-link a:link,
 #planner-top-header .inner #back-link-holder #back-link a:hover {
@@ -68,6 +69,30 @@ body {
 }
 #planner-top-header .inner #back-link-holder #back-link a:hover {
   background: #a8a8a8;
+}
+@media screen and (max-width: 767px) {
+  #planner-top-header .inner #left-logo-and-title-holder {
+    margin-top: 0;
+    text-align: center;
+  }
+  #planner-top-header .inner #left-logo-and-title-holder #logo-holder {
+    margin-top: 8px;
+    display: inline-block;
+  }
+  #planner-top-header .inner #left-logo-and-title-holder #title-holder {
+    display: inline-block;
+  }
+  #planner-top-header .inner #back-link-holder {
+    text-align: center;
+    padding: 10px;
+  }
+  #planner-top-header .inner #back-link-holder #back-link {
+    font-size: 1.3em;
+    line-height: .9em;
+    margin-top: 0;
+    display: inline-block;
+    float: none;
+  }
 }
 #planner-top-header-bottom-border {
   width: 100%;
