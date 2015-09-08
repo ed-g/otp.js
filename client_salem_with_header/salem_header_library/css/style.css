@@ -48,7 +48,8 @@ body {
   float: right;
 }
 #planner-top-header .inner #back-link-holder #back-link a:link,
-#planner-top-header .inner #back-link-holder #back-link a:hover {
+#planner-top-header .inner #back-link-holder #back-link a:hover,
+#planner-top-header .inner #back-link-holder #back-link a:visited {
   background: #969696;
   color: white;
   text-transform: uppercase;
@@ -63,7 +64,8 @@ body {
   font-weight: 100;
 }
 #planner-top-header .inner #back-link-holder #back-link a:link object,
-#planner-top-header .inner #back-link-holder #back-link a:hover object {
+#planner-top-header .inner #back-link-holder #back-link a:hover object,
+#planner-top-header .inner #back-link-holder #back-link a:visited object {
   position: relative;
   top: 3px;
 }
