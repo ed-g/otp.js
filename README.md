@@ -15,10 +15,8 @@ To get started with otp.js and the sample web client:
 
 2. Install [npm](https://www.npmjs.org/) if needed. In the otp.js project directory, run `npm install` to install Component and set up the development environment (this in configured in package.json).
 
-3. Run `make`, which invokes Component to download any required dependencies and package them together with the local otp.js code (a copy of the packaged code is put in `client/build/`).
+3. Run `make`, which invokes Component to download any required dependencies and package them together with the local otp.js code (a copy of the packaged code is put in `client/build/`). Make also copies `client/` to  `client_no_symlinks/`, replacing all symlinks with a copy of the files they point to. 
 
-4. Update the default configuration in `client/config.js` to point to your OTP backend.
+4. Update the default configuration in `client_no_symlinks/config.js` to point to your OTP backend.
 
-5. Deploy the client to the web by copying the `client` directory to your web server.
-
-6. Note the build process makes some absolute symlinks, in the images directory. Delete these and replace them with copies of the images instead. Otherwise when you copy to server, the image links will be broken.
+5. Deploy the client to the web by copying the `client_no_symlinks/` directory to your web server.

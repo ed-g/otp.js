@@ -6,7 +6,13 @@ JS := $(shell find lib -name '*.js' -print)
 
 PORT = 3000
 
-build: components $(JS)
+replace_symlinks: build
+	# Make a new client_no_symlinks directory, with symlinks replaced by
+	# copies, so we can upload to a server.  Ed 2016-09-08
+	cp -a client client_no_symlinks
+	find client_no_symlinks/build -type l | (while read x; do l=$$(readlink $$x); rm $$x; cp -a $$l $$x; done)
+
+build: components $(JS) 
 	@$(COMPONENT) build --dev --out client/build
 
 clean:
