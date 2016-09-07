@@ -10,7 +10,8 @@ window.OTP_config = {
   // otpApi: 'http://maps.cherriots.org/opentripplanner-api-webapp/ws/',
  
   // moving-forward router
-  otpApi: 'http://maps.cherriots.org/moving-forward/otp/routers/',  
+  // otpApi: 'http://maps.cherriots.org/moving-forward/otp/routers/',  
+  otpApi: 'http://maps.cherriots.org/c228ac3/otp/routers/',  
   esriApi: 'https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/',
 
   simplecoderApi: 'http://maps.cherriots.org:9998',
