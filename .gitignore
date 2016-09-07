@@ -4,3 +4,4 @@ components
 node_modules
 npm-debug.log
 config.codekit
+client_no_symlinks
