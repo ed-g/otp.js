@@ -13,6 +13,7 @@ replace_symlinks: build
 	mkdir -p client_no_symlinks/
 	cp -a client/* client_no_symlinks/
 	find client_no_symlinks/build -type l | (while read x; do l=$$(readlink $$x); rm $$x; cp -a $$l $$x; done)
+	rm client_no_symlinks/config.js # so we don't overwrite server's version.
 
 build: components $(JS) 
 	@$(COMPONENT) build --dev --out client/build
