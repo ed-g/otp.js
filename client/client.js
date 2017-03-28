@@ -33,14 +33,18 @@ $(document).ready(function () {
 
   // create OpenStreetMap tile layers for streets and aerial imagery
   var osmLayer = L.tileLayer('//{s}.tiles.mapbox.com/v3/' + window.OTP_config
-      .osmMapKey + '/{z}/{x}/{y}.png', {
+      .osmMapKey + '/{z}/{x}/{y}{scale}.png', {
       subdomains: ['a', 'b', 'c', 'd'],
-      attribution: 'Street Map <a href="//mapbox.com/about/maps">Terms & Feedback</a>'
+      attribution: 'Street Map <a href="//mapbox.com/about/maps">Terms & Feedback</a>',
+      scale: L.Browser.retina ? '@2x' : '',
+			detectRetina: true
     })
   var aerialLayer = L.tileLayer('//{s}.tiles.mapbox.com/v3/' + window.OTP_config
-      .aerialMapKey + '/{z}/{x}/{y}.png', {
+      .aerialMapKey + '/{z}/{x}/{y}{scale}.png', {
       subdomains: ['a', 'b', 'c', 'd'],
-      attribution: 'Satellite Map <a href="//mapbox.com/about/maps">Terms & Feedback</a>'
+      attribution: 'Satellite Map <a href="//mapbox.com/about/maps">Terms & Feedback</a>',
+      scale: L.Browser.retina ? '@2x' : '',
+			detectRetina: true
     })
 
   // create a leaflet layer control and add it to the map
@@ -52,11 +56,6 @@ $(document).ready(function () {
 
   // display the OSM street layer by default
   osmLayer.addTo(map)
-
-  // disable map drag on mobile
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    map.dragging.disable()
-  }
 
   // create a data model for the currently visible stops, and point it
   // to the corresponding API method

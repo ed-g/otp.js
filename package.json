@@ -1,6 +1,6 @@
 {
   "name": "otpjs",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "description": "A lightweight library for modular development of modern OpenTripPlanner front-end interfaces",
   "keywords": [],
   "author": "Conveyal",
@@ -14,7 +14,7 @@
     "component": "*",
     "component-uglifyjs": "*",
     "serve": "^1.4.0",
-    "standard": "*"
+    "standard": "8.3.0"
   },
   "scripts": {
     "start": "serve client",
